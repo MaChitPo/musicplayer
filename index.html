@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>"
+        <meta chrset="UTF-8">
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+       <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/7f74452ffd.js" crossorigin="anonymous"  ></script> 
+        <link rel="shortcut icon" href="#">
+        <title>Music Player</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="playListContainer"></div>
+            <audio src="" class="audioTag">
+                Your broswer does not support the audio element.
+             <input type="range" class="volumeSlider" min="0" max="1" step="0.01" value="1">
+            </audio>
+            <div class="currentAndTotalTime">00:00/00:00</div>
+            <div id="progressBar">
+                <div id="currentProgress"></div>
+            </div>
+            <div class="musicPlayer">
+                <i class="fas fa-step-backward controls previousButton"></i>
+                <i class="fas fa-play circle controls playButton"></i>
+                <i class="fas fa-pause-circle controls pauseButton"></i>
+                <i class="fas fa-step-forward controls nextButton"></i>
+                <i class="fas fa-volume-up controls volumeButton"></i>
+                <i class="fas fa-random controls shuffleButton"></i>
+                
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

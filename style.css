@@ -1,0 +1,107 @@
+/* 🌌 Background with subtle gradient */
+body {
+    background: linear-gradient(to bottom, #3e2723, #5d4037);
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* 📦 Centered container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+/* 🎶 Playlist styling */
+.playListContainer {
+    margin-bottom: 100px;
+}
+
+.trackItem {
+    color: #f5f5f5;
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.trackItem:hover {
+    background-color: #4e342e;
+    color: #ffd700;
+}
+
+/* 🎧 Music player layout */
+.musicPlayer {
+    display: flex;
+    flex-direction: row;
+}
+
+/* ⏱️ Time display */
+.currentAndTotalTime {
+    color: #e0f7fa;
+    margin-top: 10px;
+}
+
+/* 📊 Progress bar */
+#progressBar {
+    width: 500px;
+    height: 5px;
+    background-color: #e0f7fa;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#currentProgress {
+    width: 0%;
+    height: 100%;
+    background-color: #7c4dff;
+    transition: width 0.3s ease;
+}
+
+/* 🎛️ Controls styling */
+.controls {
+    font-size: 30px;
+    color: #ffcc80;
+    margin: 20px 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.controls:hover {
+    transform: scale(1.1);
+    color: #ffd700;
+}
+
+/* ⏸️ Hide pause button initially */
+.pauseButton {
+    display: none;
+}
+
+/* 🔀 Shuffle button with active highlight */
+.shuffleButton {
+    color: #2e7d32;
+}
+
+.shuffleButton.active {
+    color: limegreen;
+}
+
+/* 🔊 Volume button with distinct color */
+.volumeButton {
+    color: #1565c0;
+}
+
+.volumeButton.active {
+    color: #00bcd4;
+}
+
+/* 🎚️ Volume slider */
+.volumeSlider {
+    margin-top: 10px;
+    width: 150px;
+}
